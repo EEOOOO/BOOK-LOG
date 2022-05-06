@@ -1,12 +1,12 @@
 @value makerWhite, makerBlue ,makerColorful from '../../common/colors.css';
 .container {
-  width: 30%;
+  width: 40%;
   text-align: center;
 }
 .loginTitle {
   font-size: 2rem;
   margin: 0;
-  padding: 2.3rem 0 1.3rem 0;
+  padding: 0.5rem 0 1.3rem 0;
   color: makerWhite;
 }
 .loginContent {
@@ -21,7 +21,7 @@
   background: makerColorful;
   border: 0;
   color: white;
-  width: 12rem;
+  width: 13rem;
   height: 2.5rem;
   font-size: 1rem;
   padding: 0.5rem;
