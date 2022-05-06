@@ -1,0 +1,9 @@
+/*@value makerGreen from 'src\common\colors.css';*/
+
+.header {
+  background-color: green;
+  align-items: center;
+}
+.logoImg {
+  width: 5%;
+}

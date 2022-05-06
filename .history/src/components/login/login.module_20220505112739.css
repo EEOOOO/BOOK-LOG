@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  text-align: center;
+}
+.loginBtnList {
+  list-style: none;
+  padding: 0;
+}
+.button {
+  background-color: transparent;
+}

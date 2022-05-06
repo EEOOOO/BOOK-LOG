@@ -1,0 +1,15 @@
+@value makerBlue from '../../common/colors.css';
+
+.header {
+  background: makerBlue;
+  width: 100%;
+  text-align: center;
+}
+.logoImg {
+  width: 5rem;
+}
+.logoTitle {
+  color: white;
+  margin: 0;
+  padding: 0.5rem 0 0.7rem 0;
+}

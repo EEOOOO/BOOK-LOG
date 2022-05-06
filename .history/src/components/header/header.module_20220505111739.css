@@ -1,0 +1,15 @@
+/*@value makerGreen from 'src\common\colors.css';*/
+
+.header {
+  background-color: #f8bbd0;
+  with: 100%;
+  text-align: center;
+}
+.logoImg {
+  width: 5rem;
+}
+.logoTitle {
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}

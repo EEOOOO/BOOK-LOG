@@ -1,0 +1,20 @@
+/*@value makerGreen from 'src\common\colors.css';*/
+
+.header {
+  background: rgb(248, 187, 208);
+  background: linear-gradient(
+    152deg,
+    rgba(248, 187, 208, 1) 43%,
+    rgba(255, 238, 255, 1) 100%
+  );
+  with: 100%;
+  text-align: center;
+}
+.logoImg {
+  width: 5rem;
+}
+.logoTitle {
+  color: white;
+  margin: 0;
+  padding: 0.5rem 0 0.7rem 0;
+}
