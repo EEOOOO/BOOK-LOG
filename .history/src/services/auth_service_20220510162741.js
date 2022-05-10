@@ -1,4 +1,4 @@
-import { GoogleAuthProvider,GithubAuthProvider, getAuth, signInWithPopup, onAuthStateChanged, signOut} from "firebase/auth";
+import { GoogleAuthProvider,GithubAuthProvider, getAuth, signInWithPopup, onAuthStateChanged} from "firebase/auth";
 import firebaseApp from './firebase';
 
 class AuthService{
@@ -16,14 +16,8 @@ class AuthService{
         }
     }
     onAuthChange(onUserChange){
-        const auth = getAuth();
         onAuthStateChanged(auth, (user) => {
             onUserChange(user);
-        }
-        )}
-    logout(){
-        const auth = getAuth();
-        auth.signOut();
     }
 }
 

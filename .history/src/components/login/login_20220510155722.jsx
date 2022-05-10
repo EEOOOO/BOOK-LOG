@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import AuthService from '../../services/auth_service';
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -13,18 +13,13 @@ const Login = ({authService}) => {
                 id: userId,
             },
         })
-    };
+    }
     const onLogin = (event) => {
         const authName = event.currentTarget.textContent;
         console.log(authName);
         authService.login(authName)
         .then(data => goToMaker(data.user.uid));
-    };
-    useEffect(()=>{
-        authService.onAuthChange(user => {
-            user && goToMaker(user.uid);
-        });
-    });
+    }
     
     return  <div className={styles.container}>
         <Header />

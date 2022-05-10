@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import AuthService from '../../services/auth_service';
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -6,25 +6,19 @@ import styles from './login.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Login = ({authService}) => {
-    const navigate = useNavigate();
+    const history = useNavigate();
     const goToMaker = userId => {
-        navigate('/maker',{
-            state:{
-                id: userId,
-            },
+        history.push({
+            pathname:'/maker',
+            state:{id: userId}
         })
-    };
+    }
     const onLogin = (event) => {
         const authName = event.currentTarget.textContent;
         console.log(authName);
         authService.login(authName)
-        .then(data => goToMaker(data.user.uid));
-    };
-    useEffect(()=>{
-        authService.onAuthChange(user => {
-            user && goToMaker(user.uid);
-        });
-    });
+        .then(console.log)
+    }
     
     return  <div className={styles.container}>
         <Header />

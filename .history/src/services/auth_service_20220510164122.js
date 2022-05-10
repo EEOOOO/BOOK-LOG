@@ -21,7 +21,7 @@ class AuthService{
             onUserChange(user);
         }
         )}
-    logout(){
+    onLogout(){
         const auth = getAuth();
         auth.signOut();
     }

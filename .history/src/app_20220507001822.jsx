@@ -9,7 +9,7 @@ function App({authService}) {
     <div className={styles.app}>
       <Routes>
         <Route path='/' element={<Login authService={authService}/>}></Route>
-        <Route path='maker' element={<Maker authService={authService}/>}></Route>
+        <Route path='maker' element={<Maker/>}></Route>
       </Routes>
     </div>
   )
