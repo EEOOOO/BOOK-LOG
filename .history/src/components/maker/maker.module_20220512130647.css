@@ -1,4 +1,3 @@
-@value mediaQuery from '../../common/size.css';
 .maker {
   width: 100%;
   height: 100%;
@@ -8,10 +7,5 @@
 .content {
   flex: 1; /*중간에 여백 가득 채울 수 있게 함 + 부모의 height:100%와 엮여서*/
   display: flex;
-}
-
-@media screen and (max-width: mediaQuery) {
-  .content {
-    flex-direction: column;
-  }
+  flex-basis: 50%;
 }

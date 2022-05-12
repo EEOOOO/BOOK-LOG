@@ -1,0 +1,7 @@
+.maker {
+  width: 100%;
+  displat: flex;
+}
+.content {
+  flex: 1;
+}
