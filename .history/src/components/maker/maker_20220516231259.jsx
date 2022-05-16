@@ -60,7 +60,7 @@ const Maker = ({authService}) => {
     })
     const location = useLocation();
     const onAdd = (card) => {
-        const newCards = [...cards, card];
+        const newCards = [..., card];
         setCards(newCards);
     };
     return <div className ={styles.maker}>

@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from '../button/button';
 import ImageFileInput from '../Image_file_input/image_file_input';
-import styles from './cardEditForm.module.css';
-const CardEditForm = ({card}) => {
+import styles from './cardAddForm.module.css';
+const CardAddForm = ({card}) => {
     const {
         id,
         bookTitle,
@@ -67,9 +67,9 @@ const CardEditForm = ({card}) => {
     
         <div className={styles.buttons}>
             <ImageFileInput/>
-            <Button name="Delete" onClick={onSubmit}/>
+            <Button name="Delete" onCLick={onSubmit}/>
         </div>
     </form>
  };
 
-export default CardEditForm;
+export default CardAddForm;

@@ -60,8 +60,7 @@ const Maker = ({authService}) => {
     })
     const location = useLocation();
     const onAdd = (card) => {
-        const newCards = [...cards, card];
-        setCards(newCards);
+
     };
     return <div className ={styles.maker}>
         <Header onLogout={onLogout}/>
