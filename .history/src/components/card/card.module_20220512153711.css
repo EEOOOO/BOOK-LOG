@@ -1,0 +1,50 @@
+@value makerWhite, makerLightBlue, makerWheat, makerGrey,makerColorful from '../../common/colors.css';
+.card {
+  list-style: none;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.card.light {
+  background-color: makerWheat;
+}
+.card.dark {
+  background-color: makerGrey;
+  color: makerWhite;
+}
+.card.colorful {
+  background-color: makerColorful;
+  color: makerWhite;
+}
+.bookInfo {
+  margin: 1rem;
+  width: 20%;
+}
+.thumbnailImage {
+  width: 80%;
+  background-color: makerWhite;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.author,
+.publisher {
+  margin: 0.5rem 1rem 0.5rem 0.3rem;
+  font-weight: 600;
+}
+.publisher {
+  font-size: 0.7rem;
+}
+.bookLog {
+  width: 80%;
+  padding: 4rem 0 0 0.2rem;
+}
+.readingHeader {
+  margin: 1rem 0 0.5rem 0;
+}
+.beforeReading,
+.afterReading {
+  margin: 0;
+  width: 90%;
+  padding: 0.5rem;
+  background-color: makerWhite;
+  border-radius: 5px;
+}

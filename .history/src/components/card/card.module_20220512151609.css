@@ -1,0 +1,9 @@
+@value makerWhite from '../../common/colors.css';
+.card {
+  list-style: none;
+  display: flex;
+}
+.thumbnailImage {
+  width: 8rem;
+  background-color: makerWhite;
+}

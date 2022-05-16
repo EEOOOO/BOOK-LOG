@@ -1,0 +1,14 @@
+@value makerBlue, makerWhite from '../../common/colors.css';
+.imageButton {
+  flex: 1 1 50%;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 2px;
+  background-color: makerWhite;
+  color: makerBlue;
+}
+.imageButton:hover {
+  opacity: 0.8;
+}

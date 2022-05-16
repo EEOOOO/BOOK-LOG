@@ -1,0 +1,7 @@
+.card {
+  list-style: none;
+}
+.thumbnailImage {
+  width: 1rem;
+  background-color: green;
+}

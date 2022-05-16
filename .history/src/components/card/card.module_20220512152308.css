@@ -1,0 +1,25 @@
+@value makerWhite from '../../common/colors.css';
+.card {
+  list-style: none;
+  display: flex;
+}
+.bookInfo {
+  margin: 1rem;
+}
+.thumbnailImage {
+  width: 8rem;
+  background-color: makerWhite;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.author,
+.publisher {
+  margin: 0.5rem 1rem 0.5rem 0.3rem;
+  font-weight: 600;
+}
+.publisher {
+  font-size: 0.7rem;
+}
+.bookLog {
+  padding: 5rem 0 0 0;
+}

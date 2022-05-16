@@ -1,0 +1,17 @@
+@value makerBlue, makerLightGrey from '../../common/colors.css';
+.preview {
+  background-color: makerLightGrey;
+  flex-basis: 50%;
+}
+
+.previewTitle {
+  background-color: lightpink;
+  margin: 1rem 2rem;
+  font-family: helvetica;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-style: italic;
+  text-shadow: -1px -1px 0 makerBlue, 1px -1px 0 makerBlue, -1px 1px 0 makerBlue,
+    1px 1px 0 makerBlue;
+}

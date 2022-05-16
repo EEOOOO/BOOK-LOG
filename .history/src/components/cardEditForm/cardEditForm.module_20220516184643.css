@@ -1,0 +1,14 @@
+.bookInfo {
+  width: 100%;
+  display: flex;
+  flex: 1 1 30%;
+}
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.info input {
+  width: 100%;
+  height: 2rem;
+}

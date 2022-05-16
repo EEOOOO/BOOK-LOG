@@ -1,0 +1,14 @@
+@value makerBlue from '../../common/colors.css';
+.preview {
+  background-color: lightpink;
+  flex-basis: 50%;
+}
+.previewTitle {
+  margin: 1rem 2rem;
+  font-family: helvetica;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-style: italic;
+  border: 0.4px solid makerBlue;
+}

@@ -1,0 +1,13 @@
+.bookInfo {
+  width: 100%;
+}
+.infoName {
+  display: flex;
+}
+.infoText {
+  width: 30%;
+  align-items: center;
+}
+.infoInput {
+  width: 100%;
+}

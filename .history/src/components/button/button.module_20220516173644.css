@@ -1,0 +1,9 @@
+@value makerBlue from '../../common/colors.css';
+.button {
+  flex: 1 1 50%;
+  pointer: cursor;
+  font-size: 0.8em;
+  padding: 0.2em;
+  border: none;
+  background-color: makerBlue;
+}

@@ -1,0 +1,8 @@
+.preview {
+  background-color: lightpink;
+  flex-basis: 50%;
+}
+.previewTitle {
+  margin: 1rem 2rem;
+  font-family: monospace;
+}

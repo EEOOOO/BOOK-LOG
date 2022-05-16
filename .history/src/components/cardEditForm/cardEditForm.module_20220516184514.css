@@ -1,0 +1,9 @@
+.bookInfo {
+  width: 100%;
+  display: flex;
+  flex: 1 1 30%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
