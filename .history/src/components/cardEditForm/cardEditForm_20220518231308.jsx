@@ -16,7 +16,7 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         fileUrl,
     } = card;
     const onSubmit = () => {
-        deleteCard(card);
+        updateCard();
     };
     const onChange = (event) => {
         if (event.target == null){

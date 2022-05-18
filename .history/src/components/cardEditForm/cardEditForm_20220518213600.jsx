@@ -16,39 +16,27 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         fileUrl,
     } = card;
     const onSubmit = () => {
-        deleteCard(card);
+        updateCard();
     };
-    const onChange = (event) => {
-        if (event.target == null){
-            return;
-        } 
-        event.preventDefault();
-        
-        console.log(event);
-        updateCard({
-            ...card,
-            [event.target.name] : event.target.value,
-        })
-    }
     return <form className={styles.cardEdit}>
         <div className={styles.bookInfo}>
             <div className={styles.info}>
                 <span className={styles.infoText}>Title</span>
-                <input className={styles.infoInput} type="text" name="bookTitle" value={bookTitle} onChange={onChange}/>
+                <input className={styles.infoInput} type="text" name="title" value={bookTitle} />
             </div>
             <div className={styles.info}>
                 <span className={styles.infoText}>Author</span>
-                <input className={styles.infoInput} type="text" name="author" value={author} onChange={onChange}/>
+                <input className={styles.infoInput} type="text" name="author" value={author} />
             </div>
             <div className={styles.info}>
                 <span className={styles.infoText}>Publisher</span>
-                <input className={styles.infoInput} type="text" name="publisher" value={publisher} onChange={onChange}/>
+                <input className={styles.infoInput} type="text" name="publisher" value={publisher} />
             </div>
         </div>
         <div className={styles.bookCardThemeAndRate}>
             <div className={styles.cardTheme}>
                 <span className={styles.infoText}>Card Theme</span>
-                <select name="theme" value={theme} onChange={onChange}>
+                <select name="title" value={theme} >
                     <option value="light">light</option>
                     <option value="dark">dark</option>
                     <option value="pink">pink</option>
@@ -56,7 +44,7 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
             </div>
             <div className={styles.bookRate}>
                 <span className={styles.infoText}>Star Rate</span>
-                <select name="starRate" value="💙💙💙💙💙" onChange={onChange}>
+                <select name="starRate" value="💙💙💙💙💙">
                     <option value="💙💙💙💙💙">💙💙💙💙💙</option>
                     <option value="💙💙💙💙🤍">💙💙💙💙🤍</option>
                     <option value="💙💙💙🤍🤍">💙💙💙🤍🤍</option>
@@ -69,17 +57,17 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         <div className={styles.bookReview}>
             <div className={styles.beforeReading}>
                 <span className={styles.infoText}>Before reading</span>
-                <textarea type="text" name="beforeReading" value={beforeReading} onChange={onChange}/>
+                <textarea type="text" name="title" value={beforeReading} />
             </div>
             <div className={styles.beforeReading}>
                 <span className={styles.infoText}>After reading</span>
-                <textarea type="text" name="afterReading" value={afterReading} onChange={onChange}/>
+                <textarea type="text" name="title" value={afterReading} />
             </div>
         </div>
     
         <div className={styles.buttons}>
             <ImageFileInput/>
-            <Button name="Delete" onClick={onSubmit} />
+            <Button name="Delete" onClick={onSubmit}/>
         </div>
     </form>
  };

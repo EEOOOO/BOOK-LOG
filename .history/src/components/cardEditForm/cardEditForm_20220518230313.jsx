@@ -16,7 +16,7 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         fileUrl,
     } = card;
     const onSubmit = () => {
-        deleteCard(card);
+        updateCard();
     };
     const onChange = (event) => {
         if (event.target == null){
@@ -34,7 +34,7 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         <div className={styles.bookInfo}>
             <div className={styles.info}>
                 <span className={styles.infoText}>Title</span>
-                <input className={styles.infoInput} type="text" name="bookTitle" value={bookTitle} onChange={onChange}/>
+                <input className={styles.infoInput} type="text" name="title" value={bookTitle} onChange={onChange}/>
             </div>
             <div className={styles.info}>
                 <span className={styles.infoText}>Author</span>
@@ -48,7 +48,7 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         <div className={styles.bookCardThemeAndRate}>
             <div className={styles.cardTheme}>
                 <span className={styles.infoText}>Card Theme</span>
-                <select name="theme" value={theme} onChange={onChange}>
+                <select name="title" value={theme} onChange={onChange}>
                     <option value="light">light</option>
                     <option value="dark">dark</option>
                     <option value="pink">pink</option>
@@ -69,17 +69,17 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         <div className={styles.bookReview}>
             <div className={styles.beforeReading}>
                 <span className={styles.infoText}>Before reading</span>
-                <textarea type="text" name="beforeReading" value={beforeReading} onChange={onChange}/>
+                <textarea type="text" name="title" value={beforeReading} onChange={onChange}/>
             </div>
             <div className={styles.beforeReading}>
                 <span className={styles.infoText}>After reading</span>
-                <textarea type="text" name="afterReading" value={afterReading} onChange={onChange}/>
+                <textarea type="text" name="title" value={afterReading} onChange={onChange}/>
             </div>
         </div>
     
         <div className={styles.buttons}>
             <ImageFileInput/>
-            <Button name="Delete" onClick={onSubmit} />
+            <Button name="Delete" onClick={onSubmit}/>
         </div>
     </form>
  };

@@ -59,27 +59,23 @@ const Maker = ({authService}) => {
         })
     })
     const location = useLocation();
-    const createAndUpdateCard = (card) => {
-        setCards(cards => {
-            const newCards = {...cards};
-            newCards[card.id] = card;
-            return newCards;
-        })
+    const addCard = (card) => {
+        const newCards = [...cards, card];
+        setCards(newCards);
+    };
+    const updateCard = () => {
+        console.log('updateCard');
     }
-    const deleteCard = (card) => {
-        setCards(cards => {
-            const newCards = {...cards};
-            delete newCards[card.id];
-            return newCards;
-        })
+    const deleteCard = () => {
+        console.log('deleteCard');
     }
     return <div className ={styles.maker}>
         <Header onLogout={onLogout}/>
         <div className={styles.content}>
             <Editor 
             cards={cards} 
-            addCard={createAndUpdateCard}
-            updateCard={createAndUpdateCard}
+            addCard={addCard}
+            updateCard={updateCard}
             deleteCard={deleteCard}/>
             <Preview cards={cards}/>
         </div>

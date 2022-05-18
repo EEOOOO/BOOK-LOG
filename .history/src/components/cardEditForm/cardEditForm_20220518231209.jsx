@@ -16,7 +16,7 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         fileUrl,
     } = card;
     const onSubmit = () => {
-        deleteCard(card);
+        updateCard();
     };
     const onChange = (event) => {
         if (event.target == null){
@@ -79,7 +79,7 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
     
         <div className={styles.buttons}>
             <ImageFileInput/>
-            <Button name="Delete" onClick={onSubmit} />
+            <Button name="Delete" onClick={deleteCard} />
         </div>
     </form>
  };

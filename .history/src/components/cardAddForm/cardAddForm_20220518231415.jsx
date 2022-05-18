@@ -104,7 +104,7 @@ const CardAddForm = ({onAdd}) => {
     
         <div className={styles.buttons}>
             <ImageFileInput/>
-            <Button name="Add" onClick={onSubmit}/>
+            <Button name="Delete" onClick={onSubmit}/>
         </div>
     </form>
     );

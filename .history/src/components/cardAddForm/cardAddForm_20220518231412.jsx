@@ -45,6 +45,7 @@ const CardAddForm = ({onAdd}) => {
                 <span className={styles.infoText}>Author</span>
                 <input className={styles.infoInput} 
                 ref = {authorRef}
+
                 type="text" 
                 name="author" 
                 placeholder="author" />
@@ -104,7 +105,7 @@ const CardAddForm = ({onAdd}) => {
     
         <div className={styles.buttons}>
             <ImageFileInput/>
-            <Button name="Add" onClick={onSubmit}/>
+            <Button name="Delete" onClick={onSubmit}/>
         </div>
     </form>
     );
