@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../button/button';
+import ImageFileInput from '../Image_file_input/image_file_input';
 import styles from './cardEditForm.module.css';
 const CardEditForm = ({FileInput, card, updateCard, deleteCard}) => {
     const {
@@ -27,13 +28,6 @@ const CardEditForm = ({FileInput, card, updateCard, deleteCard}) => {
         updateCard({
             ...card,
             [event.target.name] : event.target.value,
-        })
-    }
-    const onFileChange = file => {
-        updateCard({
-            ...card,
-            fileName : file.name,
-            fileUrl : file.url,
         })
     }
     return <form className={styles.cardEdit}>
@@ -84,7 +78,7 @@ const CardEditForm = ({FileInput, card, updateCard, deleteCard}) => {
         </div>
     
         <div className={styles.buttons}>
-            <FileInput name={fileName} onFileChange={onFileChange}/>
+            <ImageFileInput/>
             <Button name="Delete" onClick={onSubmit} />
         </div>
     </form>

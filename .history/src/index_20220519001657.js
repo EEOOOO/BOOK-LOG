@@ -14,7 +14,7 @@ const FileInput = props => (<ImageFileInput {...props} imageUploader={imageUploa
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-     <App authService={authService} FileInput={FileInput}/>
+     <App authService={authService}/>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

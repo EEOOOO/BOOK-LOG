@@ -1,4 +1,5 @@
-import React, { useRef , useState }  from 'react';
+import React, { useRef }  from 'react';
+import { useState } from 'react/cjs/react.production.min';
 import Button from '../button/button';
 import styles from './cardAddForm.module.css';
 
@@ -11,14 +12,8 @@ const CardAddForm = ({FileInput, onAdd}) => {
     const starRateRef = useRef();
     const beforeReadingRef = useRef();
     const afterReadingRef = useRef();
-    const [file, setFile] = useState({fileName:null, fileUrl:null});
+    const [file, setFile] = useState();
 
-    const onFileChange = file => {
-        setFile({
-            fileName: file.name,
-            fileUrl: file.url,
-        })
-    }
     const onSubmit = (event) => {
         event.preventDefault();
         const card = {
@@ -30,8 +25,8 @@ const CardAddForm = ({FileInput, onAdd}) => {
             starRate: starRateRef.current.value || '',
             beforeReading: beforeReadingRef.current.value || '',
             afterReading: afterReadingRef.current.value || '',
-            fileName : file.fileName || '',
-            fileUrl : file.fileUrl || '',
+            fileName : '',
+            fileUrl : '',
         };
         formRef.current.reset();
         onAdd(card);
@@ -109,7 +104,7 @@ const CardAddForm = ({FileInput, onAdd}) => {
         </div>
     
         <div className={styles.buttons}>
-            <FileInput name={file.fileName} onFileChange={onFileChange}/>
+            <FileInput/>
             <Button name="Add" onClick={onSubmit}/>
         </div>
     </form>

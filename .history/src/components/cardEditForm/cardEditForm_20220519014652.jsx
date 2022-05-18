@@ -33,7 +33,7 @@ const CardEditForm = ({FileInput, card, updateCard, deleteCard}) => {
         updateCard({
             ...card,
             fileName : file.name,
-            fileUrl : file.url,
+            filrUrl : file.url,
         })
     }
     return <form className={styles.cardEdit}>

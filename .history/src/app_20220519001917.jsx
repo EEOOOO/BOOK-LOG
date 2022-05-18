@@ -4,7 +4,7 @@ import Login from './components/login/login';
 import {Route, Routes} from 'react-router-dom';
 import Maker from './components/maker/maker';
 
-function App({FileInput, authService}) {
+function App({authService}) {
   return (
     <div className={styles.app}>
       <Routes>

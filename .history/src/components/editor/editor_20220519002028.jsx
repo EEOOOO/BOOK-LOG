@@ -7,14 +7,13 @@ const Editor = ({FileInput, cards, addCard, updateCard, deleteCard}) => (
                 <div className={styles.editorTitle}>Editor</div>
                 {Object.keys(cards).map(key => 
                     <CardEditForm 
-                    FileInput={FileInput}
                     key={key} 
                     card={cards[key]} 
                     updateCard={updateCard} 
                     deleteCard={deleteCard}
-                    />)
+                    FileInput={FileInput}/>)
                 }
-                <CardAddForm FileInput={FileInput} onAdd={addCard}/>
+                <CardAddForm onAdd={addCard}/>
             </div>
     );
 

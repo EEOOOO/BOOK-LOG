@@ -2,11 +2,8 @@
 .input {
   display: none;
 }
-.container {
-  flex: 1 1 50%;
-}
 .imageButton {
-  width: 100%;
+  flex: 1 1 50%;
   cursor: pointer;
   font-size: 0.8rem;
   padding: 0.4rem;
