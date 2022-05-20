@@ -10,11 +10,11 @@ const ImageFileInput = ({imageUploader, name, onFileChange}) => {
     const onChange = async event => {
         setLoading(true);
         const uploaded = await imageUploader.upload(event.target.files[0]);
-        setLoading(false);
         onFileChange({
             name: uploaded.original_filename,
             url: uploaded.url,
         });
+        setLoading(false);
     }
     return (
     <div className={styles.container}>
@@ -26,13 +26,9 @@ const ImageFileInput = ({imageUploader, name, onFileChange}) => {
         name='file'
         onChange={onChange}
         />
-        {!loading && (
-            <button className={`${styles.imageButton} ${name ? styles.buttonBlue : styles.buttonWhite }`} onClick={onButtonClick}>
-                {`\" ${name} \"`||'no file'}
-            </button>
-            )
-        }
-        {loading && <div className={styles.loading}></div>}
+        <button 
+        className={styles.imageButton} 
+        onClick={onButtonClick}>{name||'no file'}</button>
     </div>
     );
 };

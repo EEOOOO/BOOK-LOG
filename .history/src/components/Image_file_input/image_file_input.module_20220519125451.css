@@ -1,4 +1,4 @@
-@value makerBlue, makerLightBlue, makerWhite, makerGrey, makerPink from '../../common/colors.css';
+@value makerBlue, makerWhite, makerGrey, makerPink from '../../common/colors.css';
 .input {
   display: none;
 }
@@ -27,11 +27,10 @@
   opacity: 0.3;
 }
 .buttonBlue {
-  background-color: makerLightBlue;
-  color: white;
+  background-color: makerBlue;
 }
 .buttonWhite {
-  background-color: makerWhite;
+  background-color: makerWHite;
 }
 .loading {
   width: 1rem;
