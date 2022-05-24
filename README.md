@@ -11,7 +11,6 @@
 - General Info
 - Technologies
 - Setup
-- Status
 
 ## Introduction / General Info
 1. With creating this app, I expected to train myself to use React more confidently.
@@ -20,10 +19,13 @@
 
 
 ## Technologies
-- "firebase": "^9.7.0",
-- "react": "^17.0.2",
-- "react-dom": "^17.0.2",
-- "cloudinary"
+* "firebase": "^9.7.0",
+* "react": "^17.0.2",
+* "react-dom": "^17.0.2",
+* "cloudinary"
+
+## Setup
+To learn this project, please install it locally using npm
 
 
 
