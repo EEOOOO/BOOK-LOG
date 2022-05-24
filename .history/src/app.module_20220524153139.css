@@ -4,7 +4,6 @@ body {
 }
 .app {
   width: 80%;
-  margin: auto;
   height: 100vh;
   display: flex;
   justify-content: center;

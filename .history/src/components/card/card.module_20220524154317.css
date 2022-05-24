@@ -57,6 +57,7 @@
 .beforeReading,
 .afterReading {
   margin: 0;
+  margin-bottom: 0.3rem;
   width: 90%;
   padding: 0.7rem;
   background-color: makerWhite;

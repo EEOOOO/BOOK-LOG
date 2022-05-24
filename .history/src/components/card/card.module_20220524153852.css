@@ -22,14 +22,14 @@
   color: makerWhite;
 }
 .title {
-  margin: 0.8rem 1rem;
+  margin: 1rem;
 }
 .content {
   display: flex;
 }
 .bookInfo {
-  margin: 0.6rem 1rem 0.6rem 0.6rem;
-  width: 22%;
+  margin: 1rem;
+  width: 23%;
 }
 .thumbnailImage {
   width: 80%;
@@ -49,16 +49,16 @@
   font-size: 0.8rem;
 }
 .bookLog {
-  width: 78%;
+  width: 77%;
 }
 .readingHeader {
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 1rem 0 0.5rem 0;
 }
 .beforeReading,
 .afterReading {
   margin: 0;
   width: 90%;
-  padding: 0.7rem;
+  padding: 0.5rem;
   background-color: makerWhite;
   border-radius: 5px;
   color: makerBlack;
