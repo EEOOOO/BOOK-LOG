@@ -11,12 +11,12 @@ import CardRepository from './services/card_repository';
 
 const authService = new AuthService(firebaseApp);
 const imageUploader = new ImageUploader();
-const cardRepository = new CardRepository();
+const CardRepository = new CardRepository();
 const FileInput = props => (<ImageFileInput {...props} imageUploader={imageUploader}/>);
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-     <App authService={authService} FileInput={FileInput} cardRepository={cardRepository}/>
+     <App authService={authService} FileInput={FileInput} CardRepository={CardRepository}/>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

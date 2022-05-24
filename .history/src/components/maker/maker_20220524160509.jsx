@@ -5,10 +5,11 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import Editor from '../editor/editor';
 import Preview from '../preview/preview';
+import CardRepository from '../../services/card_repository';
 
-const Maker = ({FileInput, authService, cardRepository}) => {
+const Maker = ({FileInput, authService}) => {
     const locationState = useLocation();
-    const [userId, setUserId] = useState(locationState && locationState.id);
+    const [userId, setUserId] = useState(locationState && locaitonState.id);
     const [cards, setCards] = useState({
         '1':{
             id : '1',
@@ -69,7 +70,7 @@ const Maker = ({FileInput, authService, cardRepository}) => {
             newCards[card.id] = card;
             return newCards;
         })
-        cardRepository.saveCard(userId, card);
+        CardRepository.saveCard(userId, card);
     }
     const deleteCard = (card) => {
         setCards(cards => {
@@ -77,7 +78,7 @@ const Maker = ({FileInput, authService, cardRepository}) => {
             delete newCards[card.id];
             return newCards;
         })
-        cardRepository.deleteCard(userId, card);
+        CardRepository.deleteCard(userId, card);
     }
     return <div className ={styles.maker}>
         <Header onLogout={onLogout}/>

@@ -6,7 +6,7 @@ import Footer from '../footer/footer';
 import Editor from '../editor/editor';
 import Preview from '../preview/preview';
 
-const Maker = ({FileInput, authService, cardRepository}) => {
+const Maker = ({FileInput, authService, CardRepository}) => {
     const locationState = useLocation();
     const [userId, setUserId] = useState(locationState && locationState.id);
     const [cards, setCards] = useState({
@@ -69,7 +69,7 @@ const Maker = ({FileInput, authService, cardRepository}) => {
             newCards[card.id] = card;
             return newCards;
         })
-        cardRepository.saveCard(userId, card);
+        CardRepository.saveCard(userId, card);
     }
     const deleteCard = (card) => {
         setCards(cards => {
@@ -77,7 +77,7 @@ const Maker = ({FileInput, authService, cardRepository}) => {
             delete newCards[card.id];
             return newCards;
         })
-        cardRepository.deleteCard(userId, card);
+        CardRepository.deleteCard(userId, card);
     }
     return <div className ={styles.maker}>
         <Header onLogout={onLogout}/>

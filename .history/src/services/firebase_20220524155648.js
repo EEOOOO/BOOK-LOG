@@ -9,5 +9,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
-
+const firebaseDatabase = database(firebaseApp);
 export default firebaseApp;
