@@ -8,14 +8,17 @@
 
 ## Table of Contents
 
+- Introduction
 - General Info
 - Technologies
 - Setup
 
-## Introduction / General Info
+## Introduction 
 1. With creating this app, I expected to train myself to use React more confidently.
 2. I use Firebase to save the data, and use Cloudinry to keep the image.
 3. I want to create simple reading log application. but compared to general reading log, I hoped it could contain more reading jounal things.(like review)
+
+## General Info
 
 
 ## Technologies
