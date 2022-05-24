@@ -25,7 +25,7 @@
 * "cloudinary"
 
 ## Setup
-To learn this project, please install it locally using npm
+To run this project, please install it locally using npm
 
 
 
