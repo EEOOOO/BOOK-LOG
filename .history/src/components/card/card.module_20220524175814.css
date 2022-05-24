@@ -1,4 +1,4 @@
-@value makerSuperLightBlue, makerWhite, makerLightPink, makerGrey, makerColorful, makerBlack from '../../common/colors.css';
+@value makerSuperLightBlue, makerWhite, makerLightPink, makerWheat, makerGrey, makerColorful, makerBlack from '../../common/colors.css';
 .card {
   list-style: none;
   display: flex;
