@@ -32,7 +32,7 @@
 
 ### Implementation
 
-![ReadingNoteApp](https://user-images.githubusercontent.com/45444757/172530357-a0f3904c-150c-4ea3-8279-dfef4f031105.jpg)
+<img src="https://user-images.githubusercontent.com/45444757/172530357-a0f3904c-150c-4ea3-8279-dfef4f031105.jpg" width="70%" height="70%">
 
 ## Technologies
 <img align="left" src="https://user-images.githubusercontent.com/45444757/172523583-127c5540-f8ad-46b0-b12b-5a337ece605c.png" width="36px" height="36px">
