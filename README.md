@@ -15,13 +15,17 @@
 
 ## Introduction 
 1. With creating this app, I expected to train myself to use React more confidently.
-2. I use Firebase to save the data, and use Cloudinry to keep the image.
-3. I want to create simple reading log application. but compared to general reading log, I hoped it could contain more reading jounal things.(like review)
+2. I used Firebase to save the data, and used Cloudinry to keep the image.
+3. I wanted to create simple reading log application. but compared to general reading log, I hoped it could contain more reading jounal things.(like review)
 
 ## General Info
 
 
+
 ## Technologies
+![image](https://user-images.githubusercontent.com/45444757/172523583-127c5540-f8ad-46b0-b12b-5a337ece605c.png)
+
+
 * "firebase": "^9.7.0",
 * "react": "^17.0.2",
 * "react-dom": "^17.0.2",
