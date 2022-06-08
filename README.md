@@ -26,13 +26,12 @@
 <img align="left" src="https://user-images.githubusercontent.com/45444757/172523583-127c5540-f8ad-46b0-b12b-5a337ece605c.png" width="36px" height="36px">
 <img align="left" src="https://user-images.githubusercontent.com/45444757/172523647-5460f901-370a-4008-afd1-67a406c88b1a.png" width="36px" height="36px">
 <img align="left" src="https://user-images.githubusercontent.com/45444757/172523792-1ad5f8bd-8193-4283-82f1-c0d595ccac1b.png" width="36px" height="36px">
-
-<p>
+<br/>
 * "firebase": "^9.7.0",
 * "react": "^17.0.2",
 * "react-dom": "^17.0.2",
 * "cloudinary"
-</p>
+
 
 ## Setup
 To run this project, please install it locally using npm
