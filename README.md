@@ -23,9 +23,9 @@
 
 
 ## Technologies
-![image](https://user-images.githubusercontent.com/45444757/172523583-127c5540-f8ad-46b0-b12b-5a337ece605c.png)
-![image](https://user-images.githubusercontent.com/45444757/172523647-5460f901-370a-4008-afd1-67a406c88b1a.png)
-![image](https://user-images.githubusercontent.com/45444757/172523792-1ad5f8bd-8193-4283-82f1-c0d595ccac1b.png)
+<img src="https://user-images.githubusercontent.com/45444757/172523583-127c5540-f8ad-46b0-b12b-5a337ece605c.png" width="24px" height="24px">
+<img src="https://user-images.githubusercontent.com/45444757/172523647-5460f901-370a-4008-afd1-67a406c88b1a.png" width="24px" height="24px">
+<img src="https://user-images.githubusercontent.com/45444757/172523792-1ad5f8bd-8193-4283-82f1-c0d595ccac1b.png" width="24px" height="24px">
 
 
 * "firebase": "^9.7.0",
