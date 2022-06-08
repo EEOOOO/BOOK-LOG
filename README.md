@@ -29,10 +29,11 @@
 
 <br/>
 <br/>
-* "firebase": "^9.7.0",
-* "react": "^17.0.2",
-* "react-dom": "^17.0.2",
-* "cloudinary"
+<ul>
+  <li> "firebase": "^9.7.0"</li>
+  <li>"react": "^17.0.2</li>
+  <li>"react-dom": "^17.0.2"</li>
+  <li>"cloudinary"</li>
 
 
 ## Setup
