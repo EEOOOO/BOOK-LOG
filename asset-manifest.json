@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BOOK-LOG/static/css/main.b712edcf.css",
+    "main.js": "/BOOK-LOG/static/js/main.ef5d0777.js",
+    "index.html": "/BOOK-LOG/index.html",
+    "main.b712edcf.css.map": "/BOOK-LOG/static/css/main.b712edcf.css.map",
+    "main.ef5d0777.js.map": "/BOOK-LOG/static/js/main.ef5d0777.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b712edcf.css",
+    "static/js/main.ef5d0777.js"
+  ]
+}
