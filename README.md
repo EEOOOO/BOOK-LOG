@@ -26,6 +26,7 @@
 ### Feature 
 1. When a user go into first page, you can choose login option
 2. In the main page, the user can make reading card. 
+</br>
   2-1. The user can put informations like title, author, publisher of the book, and can put his/her feeling or thinking about the book before/after reading a book.
 3. After making reading card, user can check his/her reading card from right side.
 4. The reading card list would saved with user's id, even user come back after logout .
