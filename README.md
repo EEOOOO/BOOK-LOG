@@ -6,6 +6,11 @@
 
 <img src="https://user-images.githubusercontent.com/45444757/169995770-c3849efd-16af-4e09-b216-e524d3d0c760.png" width="70%" height="70%">
 
+
+</br>
+</br>
+
+
 ## Table of Contents
 
 - Introduction
@@ -15,11 +20,21 @@
 - Technologies
 - Setup
 
+
+</br>
+</br>
+
+
 ## Introduction 
 
 1. With creating this app, I expected to train myself to use React more confidently.
 2. I used Firebase to save the data, and used Cloudinry to keep the image.
 3. I wanted to create simple reading log application. but compared to general reading log, I hoped it could contain more reading jounal things.(like review)
+
+
+</br>
+</br>
+
 
 ## General Info
 
@@ -30,9 +45,19 @@
 3. After making reading card, user can check his/her reading card from right side.
 4. The reading card list would saved with user's id, even user come back after logout .
 
+
+</br>
+</br>
+
+
 ### Implementation
 
 <img src="https://user-images.githubusercontent.com/45444757/172530357-a0f3904c-150c-4ea3-8279-dfef4f031105.jpg" width="70%" height="70%">
+
+
+</br>
+</br>
+
 
 ## Technologies
 <img align="left" src="https://user-images.githubusercontent.com/45444757/172523583-127c5540-f8ad-46b0-b12b-5a337ece605c.png" width="36px" height="36px">
@@ -47,6 +72,10 @@
   <li>"react-dom": "^17.0.2"</li>
   <li>"cloudinary"</li>
 </ul>
+
+
+</br>
+</br>
 
 
 ## Setup
